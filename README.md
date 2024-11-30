@@ -28,14 +28,14 @@ The IVF Success Calculator is a responsive and interactive web application that 
 
 1. Navigate to the Project Directory:
 
-    cd ivf-success-calculator
+        cd ivf-success-calculator
 
 2. Install Dependencies:
 
-    npm install
+        npm install
 
 4. Start the Development Server:
 
-    npm start
+        npm start
 
 5. Open in a Browser: Visit http://localhost:3000 to view the application.
