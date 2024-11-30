@@ -1,38 +1,346 @@
-.App {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.logo-line {
+  width: 20px;
+  height: 2px;
+  background-color: orange;
+  position: absolute;
+  left: 5px;
+  transform: translateY(-250%);
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.logo-text > span:first-child {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo-dot {
+  width: 6px;
+  height: 6px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: -5px;
+}
+
+.logo-name {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: black;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.talk-button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.calculate-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.calculate-page h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-group input[type="checkbox"] {
+  accent-color: orange;
+}
+
+.title {
+  padding: 0 80px;
+  display: flex;
+  gap: 5px;
+}
+
+.label-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  font: poppins;
+  line-height: 42px;
+}
+
+.radio-question label {
+  display: flex;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkbox-label label {
+  display: flex;
+}
+
+.icons {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: block;
+  }
+  .header .nav-links {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 350px;
+    height: 60vh;
+    top: -800px;
+    right: 0;
+    z-index: 10;
+  }
+  .nav-links.active {
+    top: 10%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.radio-question {
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  gap: 10rem;
+  /* margin: auto; */
+}
+.radio-group {
+  /* padding: 0 50px; */
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: orange;
+  margin-right: 0.5rem;
+}
+
+.radio-group label:nth-child(-n + 3) {
+  width: calc(100% - 1rem);
+}
+
+.radio-group label:nth-child(n + 4) {
+  width: calc(100% - 1rem);
+}
+
+.radio-group label,
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  outline: orange;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calculate-button {
+  display: block;
+  margin: 20px auto;
+  background: #f05454;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.result-page {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.success-rate-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 500%;
+  border: 50px solid rgb(1, 81, 1);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px auto;
+  background: rgba(27, 123, 27, 0.1); /* Light green background for effect */
 }
 
-.App-link {
-  color: #61dafb;
+.success-percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(2, 138, 2);
+}
+/* .success-rate {
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+} */
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #f05454;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column; /* Change flex to block layout */
+    align-items: flex-start;
+    padding: 20px; /* Reduce padding */
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo {
+    margin-bottom: 20px; /* Add spacing between logo and nav links */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav links vertically */
+    align-items: flex-start;
+    gap: 15px; /* Add spacing between links */
+  }
+
+  .title {
+    flex-direction: column; /* Change title to block layout */
+    align-items: flex-start;
+    gap: 10px; /* Add spacing between title elements */
+    padding: 0 20px; /* Reduce padding */
+  }
+
+  .calculate-page {
+    padding: 10px; /* Reduce padding for smaller screens */
+    max-width: 100%; /* Allow full width on small screens */
+  }
+
+  .radio-question {
+    flex-direction: column; /* Stack radio buttons vertically */
+    gap: 1rem; /* Add spacing between radio options */
+  }
+
+  .radio-group {
+    grid-template-columns: 1fr; /* Change grid to a single column */
+    gap: 10px; /* Adjust spacing for smaller screens */
+  }
+
+  .checkbox-container {
+    flex-direction: column; /* Stack checkboxes vertically */
+    gap: 10px; /* Add spacing between checkboxes */
+  }
+
+  .success-rate-circle {
+    width: 120px; /* Reduce size of the success rate circle */
+    height: 120px;
+    border-width: 30px; /* Adjust border width */
+    margin: 10px auto;
+  }
+
+  .success-percentage {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .calculate-button {
+    width: 100%; /* Make button full width */
+    padding: 10px; /* Adjust padding */
+  }
+
+  button {
+    width: 100%; /* Make all buttons full width */
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Reduce spacing between form groups */
+  }
+
+  .icons {
+    font-size: 2rem; /* Increase icon size for better visibility */
   }
 }
