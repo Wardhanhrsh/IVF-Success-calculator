@@ -26,6 +26,7 @@ function Header() {
         <a href="/">Infertility Treatment</a>
         <a href="/">IVF Testing</a>
         <a href="/">About Us</a>
+        <a href="/">About Us</a>
         <button className="talk-button">Talk to us</button>
       </nav>
       <div className="icons" onClick={toggleMenu}>
