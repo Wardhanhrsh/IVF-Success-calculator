@@ -248,7 +248,7 @@
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  background: rgba(27, 123, 27, 0.1); /* Light green background for effect */
+  background: rgba(27, 123, 27, 0.1);
 }
 
 .success-percentage {
@@ -256,11 +256,6 @@
   font-weight: bold;
   color: rgb(2, 138, 2);
 }
-/* .success-rate {
-  font-size: 2rem;
-  font-weight: bold;
-  color: green;
-} */
 
 button {
   margin-top: 20px;
@@ -273,74 +268,74 @@ button {
 
 @media (max-width: 800px) {
   .header {
-    flex-direction: column; /* Change flex to block layout */
+    flex-direction: column;
     align-items: flex-start;
-    padding: 20px; /* Reduce padding */
+    padding: 20px;
   }
 
   .logo {
-    margin-bottom: 20px; /* Add spacing between logo and nav links */
+    margin-bottom: 20px;
   }
 
   .nav-links {
-    flex-direction: column; /* Stack nav links vertically */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 15px; /* Add spacing between links */
+    gap: 15px;
   }
 
   .title {
-    flex-direction: column; /* Change title to block layout */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 10px; /* Add spacing between title elements */
-    padding: 0 20px; /* Reduce padding */
+    gap: 10px;
+    padding: 0 20px;
   }
 
   .calculate-page {
-    padding: 10px; /* Reduce padding for smaller screens */
-    max-width: 100%; /* Allow full width on small screens */
+    padding: 10px;
+    max-width: 100%;
   }
 
   .radio-question {
-    flex-direction: column; /* Stack radio buttons vertically */
-    gap: 1rem; /* Add spacing between radio options */
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .radio-group {
-    grid-template-columns: 1fr; /* Change grid to a single column */
-    gap: 10px; /* Adjust spacing for smaller screens */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .checkbox-container {
-    flex-direction: column; /* Stack checkboxes vertically */
-    gap: 10px; /* Add spacing between checkboxes */
+    flex-direction: column;
+    gap: 10px;
   }
 
   .success-rate-circle {
-    width: 120px; /* Reduce size of the success rate circle */
+    width: 120px;
     height: 120px;
-    border-width: 30px; /* Adjust border width */
+    border-width: 30px;
     margin: 10px auto;
   }
 
   .success-percentage {
-    font-size: 1.5rem; /* Reduce font size */
+    font-size: 1.5rem;
   }
 
   .calculate-button {
-    width: 100%; /* Make button full width */
-    padding: 10px; /* Adjust padding */
+    width: 100%;
+    padding: 10px;
   }
 
   button {
-    width: 100%; /* Make all buttons full width */
+    width: 100%;
     padding: 10px;
   }
 
   .form-group {
-    margin-bottom: 10px; /* Reduce spacing between form groups */
+    margin-bottom: 10px;
   }
 
   .icons {
-    font-size: 2rem; /* Increase icon size for better visibility */
+    font-size: 2rem;
   }
 }
