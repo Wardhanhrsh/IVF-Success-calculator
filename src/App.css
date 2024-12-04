@@ -1,8 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content{
+  margin-top: 67px;
+  background-color: rgb(219, 207, 191);
+  height: 100vh;
+  padding: 20px;
+}
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding: 5px 80px;
+  color: #ccc;
   background-color: white;
 }
 
@@ -240,10 +256,10 @@
 }
 
 .success-rate-circle {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 500%;
-  border: 50px solid rgb(1, 81, 1);
+  border: 40px solid rgb(1, 81, 1);
   display: flex;
   align-items: center;
   justify-content: center;
