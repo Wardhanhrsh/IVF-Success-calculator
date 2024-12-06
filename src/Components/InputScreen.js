@@ -43,13 +43,7 @@ const InputScreen = () => {
                 "Above 43",
               ].map((range, idx) => (
                 <label key={idx}>
-                  <input
-                    type="radio"
-                    name="ageGroup"
-                    value={range}
-                    checked={ageGroup === range}
-                    onChange={(e) => setAgeGroup(e.target.value)}
-                  />
+                  
                   {range}
                 </label>
               ))}
