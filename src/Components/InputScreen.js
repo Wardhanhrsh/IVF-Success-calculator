@@ -41,7 +41,7 @@ const InputScreen = () => {
                 "Between 38-40",
                 "Between 41-43",
                 "Above 43",
-              ].map((range, idx) => (
+              
                 <label key={idx}>
                   <input
                     type="radio"
