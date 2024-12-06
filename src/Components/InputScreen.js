@@ -42,7 +42,7 @@ const InputScreen = () => {
                 "Between 41-43",
                 "Above 43",
               ].map((range, idx) => (
-                
+                <label key={idx}>
                   <input
                     type="radio"
                     name="ageGroup"
