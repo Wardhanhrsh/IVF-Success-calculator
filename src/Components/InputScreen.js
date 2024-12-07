@@ -50,7 +50,7 @@ const InputScreen = () => {
                     checked={ageGroup === range}
                     onChange={(e) => setAgeGroup(e.target.value)}
                   />
-                  {range}
+                  
                 </label>
               ))}
             </div>
