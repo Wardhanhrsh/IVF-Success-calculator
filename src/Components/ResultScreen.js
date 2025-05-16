@@ -10,7 +10,7 @@ const ResultScreen = () => {
     if (!data) return 0;
     let baseRate = 62;
     if (data.ageGroup === "Under 30") baseRate += 10;
-    if (data.ageGroup === "Above 42") baseRate -= 20;
+    if (data.ageGroup === "Above 43") baseRate -= 20;
     baseRate += parseInt(data.ivfCycles) * 2;
     return Math.min(100, baseRate);
   };
