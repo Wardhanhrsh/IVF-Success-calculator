@@ -19,7 +19,7 @@ function Header() {
         <span className="logo-name">Pulse</span>
       </div>
 
-      <nav className={isOpen ? "nav-link active" : "nav-links"}>
+      <nav className={isOpen ? "nav-links active" : "nav-links"}>
         <a href="/">Doner Programme</a>
         <a href="/">Fertility Preservation</a>
         <a href="/">Advanced Treatments</a>
