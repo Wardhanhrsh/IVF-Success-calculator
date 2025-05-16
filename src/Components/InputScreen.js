@@ -87,7 +87,7 @@ const InputScreen = () => {
                     type="radio"
                     name="icsi"
                     value=""
-                    checked={procedures.icsi === Boolean}
+                    checked={procedures.icsi === true}
                     onChange={() =>
                       setProcedures({ ...procedures, icsi: true })
                     }
@@ -112,7 +112,7 @@ const InputScreen = () => {
                     type="radio"
                     name="pgt"
                     value=""
-                    checked={procedures.pgt === Boolean}
+                    checked={procedures.pgt === true}
                     onChange={() => setProcedures({ ...procedures, pgt: true })}
                   />
                   Yes
